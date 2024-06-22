@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>nikhil's story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* Iam a programmer and u are Law student 👨🏻‍💻👩‍⚖️</span><br />
+				<span class="space"/><span class="comments">* so I write some code to celebrate ur 1st birthday with me.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Samith"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"myMummy(Chandana)"</span>);<br />
+				<span class="comments">// Aug 1, 2023, was the first day we talked. You was like my Gurdian Angel at that situation 🧚</span><br />
+				i.love(u);<br />
+				<span class="comments">// Luckily, we got close and you became my girlfriend eversince.</span><br />
+				u.accepted();<br />
+				<span class="comments">// Since then, I miss u every day. I am very eagrly waiting to meet you 😓</span><br />
+				i.miss(u);<br />
+				<span class="comments">// And take care of u and our love. 🫶</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// nuvu antu untav nik istam ledu nenu pothav nannu vadilesi i can tell you one thing naa ala vadileya asal.</span><br />
+				<span class="comments">// I can't wait any more to see you just get ready please babyyyy m ina chey we should meet thats the only request i have for this birth day</span><br />
+				<span class="keyword">Kalustav Kadha nannu</span> babyyyy;<br />
+				<span class="keyword">Love you</span> (Vaalu kanula daana 
+				nee viluva cheppu mainaa
+				nee roopu chusi silalu aithinE) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// Prathi birthday happy ga jarpukovali nak prathi b day manchi party eyaliii 😁</span><br />
+				<span class="placeholder"/><span class="comments">// vadi vadi gaa cheruko 
+					kougililo karigi po 🫵🤌❤︎🫠.</span><br />
+				<span class="placeholder"/>Just come to me 🫂🫀❤️;<br />
+				}<br />
+				<span class="comments">// After we meet , we can spend time happily 😁.</span><br />
+				i.miss(u);<br />
+				i.amHappyWith(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Happy birthday Mahh, I wish next you will celebrate with me.
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- Samith</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			                     Copyright © 2024 <a href='https://www.instagram.com/samith.m760li/?hl=en'>Samith</a> 2024-till the end
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2023, 7, 1);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
